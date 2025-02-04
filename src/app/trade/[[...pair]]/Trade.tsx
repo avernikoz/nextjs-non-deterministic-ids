@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 
 export const Trade = () => {
   const params = useParams();
-  const pair = params.pair;
+  const pair = params?.pair;
 
   const displayPair = Array.isArray(pair)
     ? pair.join('/')

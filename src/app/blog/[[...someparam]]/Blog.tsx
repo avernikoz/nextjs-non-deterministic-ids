@@ -24,7 +24,7 @@ const blogPosts: Record<string, BlogPost> = {
 
 export default function BlogPage() {
   const params = useParams();
-  const param = params.someparam;
+  const param = params?.someparam;
 
   const renderContent = () => {
     // If no param (base /blog route), show blog list
